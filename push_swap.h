@@ -59,7 +59,6 @@ void    reverse_rotate_b(t_info *info, int rrr);
 void    reverse_rotate_r(t_info *info);
 int ft_abs(int i);
 int fin_max_index(t_info *info);
-static int  insert_big_value(t_info *info, index_b);
 void    set_cost(t_info *info);
 void    bigger_stacks(t_info *info);
 void    push_back(t_info *info);

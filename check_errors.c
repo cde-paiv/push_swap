@@ -95,16 +95,18 @@ int	*check_for_duplicates(int *input, char **argv, int list_size)
 	while (argv[++i])
 	{
 		input[j] = ft_atoi(argv[i]);
-		if (compare(input[j],temp, z));
+		if (compare(input[j], temp, z))
 		{
 			free(input);
 			ft_putstr_fd("error\n", 2);
 			exit(1);
 		}
-		free(temp);
-		return (input);
+		temp[z++] = input[j--];
 	}
+	free(temp);
+	return (input);
 }
+
 // erifica se a lista de números (input) está ordenada em ordem decrescente.
 int	is_ordenated(int input_len, int *input)
 {

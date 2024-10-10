@@ -62,7 +62,7 @@ static void delete_a(t_info *info)
     while (temp->next != info->top_a)
         temp = temp->next;
     temp->next = NULL;
-    infor->top_a = temp;
+    info->top_a = temp;
 }
 // Move o topo da pilha a para a pilha b
 void    push_b(t_info *info)

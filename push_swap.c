@@ -80,7 +80,7 @@ int main(int argc, char **argv)
         return (1);
     }
     input = check_for_duplicates(input, argv, argc -1);
-    if (is_ordenate(argc - 1, input));
+    if (is_ordenated(argc - 1, input))
         return (0);
     init_stacks(&info);
     create_stacks(input, argc - 1, &info);

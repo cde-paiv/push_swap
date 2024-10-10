@@ -17,9 +17,8 @@ CC		= cc $(FLAGS)
 
 LIBFT	= libft/libft.a
 
-SRCS	=
-			check_error.c \
-			init_stacks.c \
+SRCS = push_swap.c check_errors.c init_stack.c push_a_to_b.c push_funcs.c \
+		rotate_funcs.c swap_funcs.c push_back.c reverse_r_funcs.c set_cost.c \
 
 OBJS	= $(SRCS:.c=.o)
 

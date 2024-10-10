@@ -25,8 +25,8 @@ void    swap_a(t_info *info)
     swapi = temp->index;
     temp->value = info->top_a->value;
     temp->index = info->top_a->index;
-    info->top_a = value->swapv;
-    info->top_a = index->swapi;
+    info->top_a->value = swapv;
+    info->top_a->index = swapi;
     ft_putstr_fd("sa\n", 1);
 }
 
@@ -37,15 +37,15 @@ void    swap_b(t_info *info)
     int swapv;
     int swapi;
 
-    temp = info->stack_bç
+    temp = info->stack_b;
     while (temp->next != info->top_b)
         temp = temp->next;
     swapv = temp->value;
     swapi = temp->index;
     temp->value = info->top_b->value;
     temp->index = info->top_b->index;
-    info->top_b = value->swapv;
-    info->top_b = index->swapi;
+    info->top_b->value = swapv;
+    info->top_b->index = swapi;
     ft_putstr_fd("sb\n", 1);
 }
 

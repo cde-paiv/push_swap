@@ -23,6 +23,7 @@ void	init_stacks(t_info *info)
 	info->pivot = 0;
 	info->max = 0;
 }
+
 // cria a pilha stack_a usando um array de números (a),
 // atribuindo os valores a cada nó da pilha.
 void	create_stacks(int *a, int list_size, t_info *info)
@@ -52,6 +53,7 @@ void	create_stacks(int *a, int list_size, t_info *info)
 	}
 	info->top_a = new;
 }
+
 // encontra o valor máximo na pilha a.
 void	find_max(t_info *info)
 {
@@ -68,6 +70,7 @@ void	find_max(t_info *info)
 	}
 	info->max = max;
 }
+
 // atribui índices aos elementos da pilha a com base nos seus valores.
 void	init_index(t_info *info)
 {
@@ -97,6 +100,7 @@ void	init_index(t_info *info)
 		index++;
 	}
 }
+
 // o caso em que restam três elementos na pilha a e precisamos ordená-los.
 void	case3(t_info *info)
 {

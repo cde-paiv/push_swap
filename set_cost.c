@@ -35,7 +35,7 @@ int fin_max_index(t_info *info)
     return (max);
 }
 // calcula o custo de inserir um valor maior que o índice index_b na pilha a.
-static int  insert_big_value(t_info *info, index_b)
+static int  insert_big_value(t_info *info, int index_b)
 {
     t_stack *temp;
     int i;
@@ -84,7 +84,8 @@ static int  check_cost_a(t_info *info, int index_b)
     }
     if (i <= ((info->len_a - info->len_b) / 2))
         return (i);
-    else (i - (info->len_a - info->len_b));
+    else
+        return (i - (info->len_a - info->len_b));
 }
 // calcula os custos de mover elementos da pilha b para a pilha a.
 void    set_cost(t_info *info)
@@ -105,7 +106,7 @@ void    set_cost(t_info *info)
     temp = info->stack_b;
     while (i++ < info->len_b / 2)
     {
-        temp->cost_a = check_cost_a(info, temp->index)
+        temp->cost_a = check_cost_a(info, temp->index);
         temp->cost_b = (i) * (-1);
         temp = temp->next;
     }

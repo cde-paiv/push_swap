@@ -40,8 +40,8 @@ static void get_pivot_1(t_info *info)
     {
         if (temp->prev == NULL)
         {
-            min = info->index;
-            max = info->index;
+            min = temp->index;
+            max = temp->index;
         }
         else
         {
@@ -65,21 +65,21 @@ static void get_pivot(t_info *info)
     if (i == 0)
     {
         if (info->len_a >= 100 && info->len_a < 500)
-            blocks = 5
+            blocks = 5;
         else if (info->len_a >= 500)
             blocks = 11;
         else
-            block = 1;
+            blocks = 1;
     }
-    if (block != 1 && i < info->len_a)
+    if (blocks != 1 && i < info->len_a)
     {
         if (i >= (info->len_a / blocks) * div)
-            div++;
-        info->pivot = (info->len_a / blocks) * div;
+                div++;
+            info->pivot = (info->len_a / blocks) * div;
+    }
         else
             get_pivot_1(info);
         i++;
-    }
 }
 // decide qual operação realizar quando a pilha é grande.
 void    bigger_stacks(t_info *info)
