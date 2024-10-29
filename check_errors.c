@@ -6,13 +6,12 @@
 /*   By: cde-paiv <cde-paiv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 17:58:03 by cde-paiv          #+#    #+#             */
-/*   Updated: 2024/10/03 17:58:03 by cde-paiv         ###   ########.fr       */
+/*   Updated: 2024/10/22 13:19:11 by cde-paiv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-// Verifica se o número passado é válido dentro dos limites de um inteiro.
-// Se o número for negativo, trata adequadamente
+
 int	check_number(char *argv)
 {
 	unsigned int	num;
@@ -34,8 +33,7 @@ int	check_number(char *argv)
 		return (-1);
 	return (0);
 }
-// Valida a entrada de números fornecidos. 
-// Verifica o tamanho da string e se os caracteres são dígitos ou sinal
+
 int	check_error(char **argv)
 {
 	int	i;
@@ -62,7 +60,7 @@ int	check_error(char **argv)
 	}
 	return (0);
 }
-// Compara um número de entrada com uma lista temporária para detectar duplicatas
+
 static int	compare(int input, int *tmp, int z)
 {
 	int	i;
@@ -79,7 +77,7 @@ static int	compare(int input, int *tmp, int z)
 	}
 	return (0);
 }
-// Verifica se há números duplicados na lista de argumentos
+
 int	*check_for_duplicates(int *input, char **argv, int list_size)
 {
 	int	i;
@@ -98,7 +96,7 @@ int	*check_for_duplicates(int *input, char **argv, int list_size)
 		if (compare(input[j], temp, z))
 		{
 			free(input);
-			ft_putstr_fd("error\n", 2);
+			ft_putstr_fd("Error\n", 2);
 			exit(1);
 		}
 		temp[z++] = input[j--];
@@ -107,7 +105,6 @@ int	*check_for_duplicates(int *input, char **argv, int list_size)
 	return (input);
 }
 
-// erifica se a lista de números (input) está ordenada em ordem decrescente.
 int	is_ordenated(int input_len, int *input)
 {
 	int	i;
@@ -122,4 +119,3 @@ int	is_ordenated(int input_len, int *input)
 	free(input);
 	return (1);
 }
-

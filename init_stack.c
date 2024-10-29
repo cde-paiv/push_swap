@@ -6,7 +6,7 @@
 /*   By: cde-paiv <cde-paiv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 17:58:14 by cde-paiv          #+#    #+#             */
-/*   Updated: 2024/10/03 17:58:14 by cde-paiv         ###   ########.fr       */
+/*   Updated: 2024/10/22 13:20:28 by cde-paiv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,6 @@ void	init_stacks(t_info *info)
 	info->max = 0;
 }
 
-// cria a pilha stack_a usando um array de números (a),
-// atribuindo os valores a cada nó da pilha.
 void	create_stacks(int *a, int list_size, t_info *info)
 {
 	int		i;
@@ -54,7 +52,6 @@ void	create_stacks(int *a, int list_size, t_info *info)
 	info->top_a = new;
 }
 
-// encontra o valor máximo na pilha a.
 void	find_max(t_info *info)
 {
 	t_stack	*temp;
@@ -71,7 +68,6 @@ void	find_max(t_info *info)
 	info->max = max;
 }
 
-// atribui índices aos elementos da pilha a com base nos seus valores.
 void	init_index(t_info *info)
 {
 	t_stack	*temp;
@@ -101,7 +97,6 @@ void	init_index(t_info *info)
 	}
 }
 
-// o caso em que restam três elementos na pilha a e precisamos ordená-los.
 void	case3(t_info *info)
 {
 	if (info->top_a->value > info->stack_a->value && \
