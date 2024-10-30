@@ -1,19 +1,14 @@
 # Push Swap
 
-"In this project, I will sort data within a stack using a limited set of instructions, aiming to minimize the number of actions required.
-To achieve this, I'll explore different algorithms and select the most efficient solution from multiple options to optimize data sorting." 
+"In this project, I will sort data within a stack using a limited set of instructions, aiming to minimize the number of actions required. To achieve this, I'll explore different algorithms and select the most efficient solution from multiple options to optimize data sorting."
 
-<br>
-
-![Push Swap Image](./image/push_image.png)
-
-<br>
+<div align="center" max-width="auto" max-height="auto">
+	<img src="./image/push_image.jpg" max-height="250" alight="center">
+</div>
 
 ## Instruction set
 
-For the following instructions, if the instruction is not possible, the part of
-it that can't be executed won't.
-The goal is to sort in ascending order, numbers into stack a. You can only use 2 stacks (a and b). 
+For the following instructions, if the instruction is not possible, the part of it that can't be executed won't. The goal is to sort in ascending order, numbers into stack `a`. You can only use 2 stacks (`a` and `b`). 
 
 | Code  | Instruction                         | Action                                                 |
 | ----- | ----------------------------------- | ------------------------------------------------------ |
@@ -31,8 +26,6 @@ The goal is to sort in ascending order, numbers into stack a. You can only use 2
 
 ## Push Swap Demo
 
-<br>
-
-**[Watch the Push Swap Demo Video](./image/push_swap_video.mp4)**
-
-<br>
+<div align="center" max-width="auto" max-height="auto">
+	<img src="./image/push_video.gif" max-height="250" alight="center">
+</div>
