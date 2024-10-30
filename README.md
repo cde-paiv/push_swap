@@ -3,11 +3,11 @@
 "In this project, I will sort data within a stack using a limited set of instructions, aiming to minimize the number of actions required.
 To achieve this, I'll explore different algorithms and select the most efficient solution from multiple options to optimize data sorting." 
 
-</br>
+<br>
 
-<img src="./image/push_image.png">
+![Push Swap Image](./image/push_image.png)
 
-</br>
+<br>
 
 ## Instruction set
 
@@ -31,9 +31,8 @@ The goal is to sort in ascending order, numbers into stack a. You can only use 2
 
 ## Push Swap Demo
 
-</br>
+<br>
 
-<img src="./image/push_swap_video.mp4">
+**[Watch the Push Swap Demo Video](./image/push_swap_video.mp4)**
 
-</br>
-
+<br>
